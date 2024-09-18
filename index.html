@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phantom by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="plot_epw.js" defer></script> <!-- Adding the script for graph generation -->
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <header id="header">
+        <div class="inner">
+          <a href="index.html" class="logo">
+            <span class="symbol"><img src="images/logo.jpg" alt="" /></span>
+            <span class="title">Infrared City Intern Project</span>
+          </a>
+        </div>
+      </header>
+
+      <div id="main">
+        <div class="inner">
+          <header>
+            <h1>
+              Ladder Internship Interactive Climate Analysis Project
+            </h1>
+            <p>This is an interactive climate analysis project created by InfraredCity Interns. Select your EPW file and your graph type below.</p>
+          </header>
+
+          <!-- Adding file input for EPW files and a chart area -->
+          <section>
+            <label for="fileInput">Select EPW File:</label>
+            <input type="file" id="fileInput" accept=".epw" />
+          </section>
+
+          <section>
+            <div id="chart" style="width:100%;height:500px;"></div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
